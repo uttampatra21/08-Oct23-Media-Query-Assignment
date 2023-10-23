@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#nav {
+  padding: 3vw 5vw;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+#image {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#image img {
+  display: block;
+}
+
+#header {
+  background-color: black;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#grid {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.grid-items {
+  height: 200px;
+  width: 100%;
+  background-color: #000;
+}
+.grid-items:nth-child(1) {
+  background-color: blue;
+}
+.grid-items:nth-child(2) {
+  background-color: black;
+}
+.grid-items:nth-child(3) {
+  background-color: greenyellow;
+}
+.grid-items:nth-child(4) {
+  background-color: orange;
+}
+
+#task5 {
+  display: flex;
+  justify-content: center;
+}
+#smll {
+  display: flex;
+  flex-direction: column;
+}
+#contsiners1,
+#contsiners4 {
+  width: 50px;
+  height: 100vh;
+  color: #fff;
+  background-color: #000;
+}
+#contsiners2 {
+  width: 90vw;
+  height: 50vh;
+  background-color: seagreen;
+}
+
+#contsiners3 {
+  width: 90vw;
+  height: 50vh;
+  background-color: orange;
+}
+/* 
+
+
+
+
+
+
+
+
+
+
+*/
+@media only screen and (max-width: 600px) {
+  #nav {
+    background-color: blue;
+  }
+}
+
+@media screen and (min-device-width: 500px) and (max-device-width: 800px) {
+  #image {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  #header {
+    flex-direction: column;
+    background-color: rgb(76, 68, 68);
+    gap: 1rem;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #task5 {
+    flex-direction: column;
+  }
+  #contsiners1,
+  #contsiners4 {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-color: #000;
+  }
+  #contsiners4{
+    position: absolute;
+    bottom: 0;
+  }
+  #contsiners2 {
+    width: 100%;
+    height: 5vh;
+  }
+  
+  #contsiners3 {
+    width: 100%;
+    height: 50vh;
+    background-color: orange;
+  }
+}
